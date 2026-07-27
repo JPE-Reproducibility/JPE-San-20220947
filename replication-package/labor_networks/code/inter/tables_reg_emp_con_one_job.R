@@ -1,0 +1,203 @@
+  # open log file
+today <- today()
+filename <- paste0(log, "reg_emp_con_",today,".txt")
+sink(file = filename,split = TRUE)
+
+source(paste0(process, "functions_reg_emp_con.R"))
+
+set.seed(12345)
+
+
+
+B = 100
+for (b in 1:B) {
+#take 20% of children
+  print('b = ')
+  print(b)
+  
+  # load the children sample
+  filename <- paste0(data, "children_sample.Rdata")
+  load(filename)
+  df_children <- df
+  rm(df)
+  
+  # gen a list of firms with number of jobs per firm-year
+  df_jobs = df_children[,.(jobs = .N), by = .(id_firm, year)]
+
+  # keep 20% of children
+  df_children = cbind(df_children,data.table(runif(dim(df_children)[1])))
+  df_children <- df_children[V1 < 0.2]
+  df_children[,V1 := NULL]
+  
+
+  # drop children working in a firm with more than one job per year
+  df_children = merge(df_children,df_jobs, by = c("id_firm", "year"))
+  df_children = df_children[jobs == 1]
+  df_children[,jobs := NULL]
+  
+  # get the reg data
+  df_reg <- get.reg.emp.con.data(df_children)
+  rm(df_children,df_jobs)
+
+## table xx
+
+# all
+
+table_temp <- run.reg.emp.con(df_reg)
+
+if (b == 1){table1 <- table_temp}
+if (b > 1) {table1 <- rbind(table1,table_temp)}
+
+# Jews
+table_temp <- run.reg.emp.con(df_reg[ethnicity == 0])
+
+if (b == 1){table2 <- table_temp}
+if (b > 1) {table2 <- rbind(table2,table_temp)}
+
+
+# Arabs
+table_temp <- run.reg.emp.con(df_reg[ethnicity == 1])
+
+if (b == 1){table3 <- table_temp}
+if (b > 1) {table3 <- rbind(table3,table_temp)}
+
+
+# No college
+table_temp <- run.reg.emp.con(df_reg[education == 0])
+
+if (b == 1){ table4 <- table_temp}
+if (b > 1) {table4 <- rbind(table4,table_temp)}
+
+
+# Some college
+table_temp <- run.reg.emp.con(df_reg[education == 1])
+
+if (b == 1){ table5 <- table_temp}
+if (b > 1) {table5 <- rbind(table5,table_temp)}
+
+# Males
+table_temp <- run.reg.emp.con(df_reg[sex == 0])
+
+if (b == 1){ table6 <- table_temp}
+if (b > 1) {table6 <- rbind(table6,table_temp)}
+
+
+# Females
+table_temp <- run.reg.emp.con(df_reg[sex == 1])
+
+if (b == 1){ table7 <- table_temp}
+if (b > 1) {table7 <- rbind(table7,table_temp)}
+
+## Event study- all
+table_temp <- run.reg.emp.con.event(df_reg)
+
+if (b == 1){table8 <- table_temp}
+if (b > 1) {table8 <- rbind(table8,table_temp)}
+
+## Event study- Jews
+table_temp <- run.reg.emp.con.event(df_reg[ethnicity == 0])
+
+if (b == 1){table9 <- table_temp}
+if (b > 1) {table9 <- rbind(table9,table_temp)}
+
+## Event study- Arabs
+table_temp <- run.reg.emp.con.event(df_reg[ethnicity == 1])
+
+if (b == 1){table10 <- table_temp}
+if (b > 1) {table10 <- rbind(table10,table_temp)}
+
+## Event study- No college
+table_temp <- run.reg.emp.con.event(df_reg[education == 0])
+
+if (b == 1){table11 <- table_temp}
+if (b > 1) {table11 <- rbind(table11,table_temp)}
+
+
+## Event study- College
+table_temp <- run.reg.emp.con.event(df_reg[education == 1])
+
+if (b == 1){table12 <- table_temp}
+if (b > 1) {table12 <- rbind(table12,table_temp)}
+
+
+## Event study- Males
+table_temp <- run.reg.emp.con.event(df_reg[sex == 0])
+
+if (b == 1){table13 <- table_temp}
+if (b > 1) {table13 <- rbind(table13,table_temp)}
+
+## Event study- Females
+table_temp <- run.reg.emp.con.event(df_reg[sex == 1])
+
+if (b == 1){table14 <- table_temp}
+if (b > 1) {table14 <- rbind(table14,table_temp)}
+
+
+
+# remove the reg data
+rm(df_reg)
+
+# save the tables
+filename <- paste0(data, "reg_emp_con_one_job.Rdata")
+save(table1,table2,table3,table4,table5,table6,table7,
+     table8,table9,table10,table11,table12,table13,table14,
+     file = filename)
+}
+
+# load the tables
+
+filename <- paste0(data, "reg_emp_con_one_job.Rdata")
+load(filename)
+
+## get statistics
+filename <- paste0(data, "children_sample.Rdata")
+load(filename)
+df_children <- df
+rm(df)
+
+# drop children working in a firm with more than one job per year
+df_jobs = df_children[,.(jobs = .N), by = .(id_firm, year)]
+df_children = merge(df_children,df_jobs, by = c("id_firm", "year"))
+df_children = df_children[jobs == 1]
+df_children[,jobs := NULL]
+rm(df_jobs)
+
+# gen a list of firms with number of jobs per firm-year
+
+stat1 <- get.statistics(df_children)
+stat2 <- get.statistics(df_children[ethnicity == 0])
+stat3 <- get.statistics(df_children[ethnicity == 1])
+stat4 <- get.statistics(df_children[ education == 0])
+stat5 <- get.statistics(df_children[ education == 1])
+stat6 <- get.statistics(df_children[ sex == 0])
+stat7 <- get.statistics(df_children[ sex == 1])
+
+
+
+# export the table
+#filename <- paste0(output, "table_reg_emp_con_one_job.csv")
+#write.csv(table,filename)
+
+## prepare the event study tables
+
+table8 <- prepare.reg.emp.con.event.table(table8)
+table9 <- prepare.reg.emp.con.event.table(table9)
+table10 <- prepare.reg.emp.con.event.table(table10)
+table11 <- prepare.reg.emp.con.event.table(table11)
+table12 <- prepare.reg.emp.con.event.table(table12)
+table13 <- prepare.reg.emp.con.event.table(table13)
+table14 <- prepare.reg.emp.con.event.table(table14)
+
+table8 <- cbind(table8,stat1)
+table9 <- cbind(table9,stat2)
+table10 <- cbind(table10,stat3)
+table11 <- cbind(table11,stat4)
+table12 <- cbind(table12,stat5)
+table13 <- cbind(table13,stat6)
+table14 <- cbind(table14,stat7)
+
+table <- rbind(table8,table9,table10,table11,table12,table13,table14)
+
+# export the table
+filename <- paste0(output, "figure_reg_emp_con_event_one_job.csv")
+write.csv(table,filename)

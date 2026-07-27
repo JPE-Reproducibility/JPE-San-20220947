@@ -1,0 +1,14 @@
+Replication package for "[PAPER TITLE]"
+Copyright (c) [YEAR] [AUTHOR NAMES]
+
+This replication package -- all code, data, and documentation included in the deposit --
+is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+You may share and adapt the material for any purpose, including commercially, provided you
+give appropriate credit. Full terms: https://creativecommons.org/licenses/by/4.0/legalcode
+
+The material is provided "as is", without warranties of any kind.
+
+NOT COVERED: the confidential microdata from the Israel Bituach Leumi (National Insurance)
+Institute are not included in this deposit and are not licensed here; rights rest with the
+data providers and access is governed by the BTL data-use agreement (see README, Section 1).
+The included unemployment.csv is reused from the World Bank / ILOSTAT under CC BY 4.0.

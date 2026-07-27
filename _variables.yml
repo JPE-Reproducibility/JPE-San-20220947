@@ -1,6 +1,11 @@
-title: "Stand-in title"
-author: "Dr Prof James 'JayJay' Author"
-paper_id: 12345678
+title: "Timing is Everything: Parental Professional Connections and Labor Market Entry"
+author: "San"
 round: 1
-repo: "https://www.github.com/standin"
-dropbox_rel_path: "JPE/Author-12345678/1"
+repo: "https://github.com/JPE-Reproducibility/JPE-San-20220947"
+paper_id: 20220947
+journal: "JPE"
+paper_slug: "San-20220947"
+dropbox_rel_path: "JPE/San-20220947/1"
+package_size_gb: 0.0
+package_max_file_size_gb: 2
+package_max_pkg_size_gb: 10
