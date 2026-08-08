@@ -34,12 +34,12 @@ closeAllConnections()
 ##      "B" = real CSVs, Stage 2 only        (any machine)
 ##      "C" = real microdata, Stages 1 -> 2  (BTL environment)
 ## ==========================================================================
-run_mode <- "A"
+run_mode <- "B"
 
 ## ==========================================================================
 ## 2. ROOT  --  the one place to point at the package
 ## ==========================================================================
-root <- "/PATH/TO/FILES/"  # <-- EDIT THIS LINE ONLY"
+root <- "/files/JPE-San-20220947/replication-package/labor_networks"  # <-- EDIT THIS LINE ONLY"
 if (!grepl("/$", root)) root <- paste0(root, "/")
 
 ## ==========================================================================

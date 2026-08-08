@@ -1,0 +1,2492 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-08-08">
+
+<title>JPE Replication Report</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="JPE-San-20220947-R1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="JPE-San-20220947-R1_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="JPE-San-20220947-R1_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="JPE-San-20220947-R1_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="JPE-San-20220947-R1_files/libs/quarto-html/popper.min.js"></script>
+<script src="JPE-San-20220947-R1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="JPE-San-20220947-R1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="JPE-San-20220947-R1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="JPE-San-20220947-R1_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="JPE-San-20220947-R1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="JPE-San-20220947-R1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="JPE-San-20220947-R1_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">JPE Replication Report</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 8, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="paper-identification" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Paper Identification</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 70%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>ID</td>
+<td><p>20220947</p></td>
+</tr>
+<tr class="even">
+<td>Author</td>
+<td><p>San</p></td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td><p>Timing is Everything: Parental Professional Connections and Labor Market Entry</p></td>
+</tr>
+<tr class="even">
+<td>Iteration</td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p>Some useful information up front:</p>
+<ul>
+<li><a href="https://www.journals.uchicago.edu/journals/jpe/datapolicy">JPE Data and Code Availability Policy</a></li>
+<li><a href="https://jpedataeditor.github.io/">Step by step guidance from Data Editor for Authors</a></li>
+<li><a href="https://social-science-data-editors.github.io/template_README/">Template README</a></li>
+</ul>
+</section>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
+<p>In assessing compliance with our <a href="https://www.journals.uchicago.edu/journals/jpe/datapolicy">Data and Code Availability Policy</a>, our reproducibility team has identified the following issues, which we ask you to address:</p>
+<ol type="1">
+<li>Data Editor’s first point.</li>
+<li>Data Editor’s second point.</li>
+</ol>
+</section>
+<section id="general" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> General</h1>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">Data Availability and Provenance Statements</label>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">Statement about Rights - Part 1: Right to use the data (e.g.&nbsp;<em>did the authors lawfully obtain the data</em>)</label></li>
+<li><label><input type="checkbox" checked="">Statement about Rights - Part 2: Right to publish the data (e.g.&nbsp;<em>are human subjects involved and did permission been granted to publish their data?</em>)</label></li>
+<li><label><input type="checkbox" checked="">License for Data (optional, but recommended)</label></li>
+<li><label><input type="checkbox" checked="">Details on each Data Source</label></li>
+</ul></li>
+<li><label><input type="checkbox" checked="">Dataset list</label></li>
+<li><label><input type="checkbox" checked="">Computational requirements</label>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">Software Requirements</label></li>
+<li><label><input type="checkbox" checked="">Controlled Randomness (as necessary)</label></li>
+<li><label><input type="checkbox" checked="">Memory, Runtime, and Storage Requirements</label></li>
+</ul></li>
+<li><label><input type="checkbox" checked="">Description of programs/code</label>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">License for Code (Optional, but recommended)</label></li>
+</ul></li>
+<li><label><input type="checkbox" checked="">{REPLICATOR} to Replicators</label>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">Details (as necessary)</label></li>
+</ul></li>
+<li><label><input type="checkbox" checked="">List of tables and programs</label></li>
+<li><label><input type="checkbox" checked="">References (Optional, but recommended)</label></li>
+</ul>
+</section>
+<section id="high-level-description-of-research-project" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> High-level Description of Research Project</h1>
+<p><em>This research project…</em></p>
+<ul class="task-list">
+<li><label><input type="checkbox">uses observational data.</label></li>
+<li><label><input type="checkbox" checked="">uses <em>confidential</em> observational data.</label></li>
+<li><label><input type="checkbox">uses data generated via experiment or trial by the authors (in field or lab).</label>
+<ul class="task-list">
+<li><label><input type="checkbox">For lab experiments: The code to implement the experimental protocol (z-Tree, o-Tree etc) is included in the package.</label></li>
+<li><label><input type="checkbox">A PDF copy of IRB approval is contained in the package.</label></li>
+<li><label><input type="checkbox">A PDF document outlining the design of the experiment, including information on the selection and eligibility of participants is included.</label></li>
+<li><label><input type="checkbox">A PDF copy of the instructions given to participants in both original language and an English translation is included.</label></li>
+</ul></li>
+<li><label><input type="checkbox">uses data generated via survey by the authors (in field or online)</label>
+<ul class="task-list">
+<li><label><input type="checkbox">The programs used to administer the survey (e.g.&nbsp;qualtrics survey file) are included.</label></li>
+<li><label><input type="checkbox">A PDF copy of IRB approval is contained in the package.</label></li>
+<li><label><input type="checkbox">A PDF of the original questionaire(s) and information on the selection and eligibility of participants is included.</label></li>
+</ul></li>
+<li><label><input type="checkbox">is a simulation study: the data are generated by an algorithm.</label></li>
+<li><label><input type="checkbox">is a numerical illustration: no data are used but code is used to produce illustrative output (tables, figures)</label></li>
+</ul>
+</section>
+<section id="data-description" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Data description</h1>
+<p>For any data that cannot be provided as part of the replication package, please provide the following information as part of the README.</p>
+<blockquote class="blockquote">
+<p>{REQUIRED} Please specify how long the data will be preserved in the restricted-access location.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>{REQUIRED} Please provide affirmation of support for replication checks. - As per the <a href="https://jpedataeditor.github.io/policy.html">JPE policy</a>, “In cases where data cannot be published in an openly accessible trusted data repository like the JPE dataverse, authors who have requested an exemption to publish them at the time of first submission must commit to preserving the data and code for a period of no less than five years following the publication of the paper. They should also provide reasonable assistance to requests for clarification and replication.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>{REQUIRED} Please provide a codebook for the data. - The codebook should at a minimum describe the variables obtained from the data source, in a manner that will let others verify that they have obtained a substantially similar dataset if successfully obtaining access to the data.</p>
+</blockquote>
+<section id="data-sources" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="data-sources"><span class="header-section-number">5.1</span> Data Sources</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>file/name</th>
+<th>public</th>
+<th>private</th>
+<th>DOI/URL</th>
+<th>Access described</th>
+<th>cited readme</th>
+<th>cited paper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>all_population.dta</code></td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><code>hardi.dta</code></td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="odd">
+<td><code>limodim.dta</code></td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><code>sachar/sachar_YYYY.dta</code> (1991–2015)</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="odd">
+<td><code>ktovat/ktovet_XXXX.dta</code> (2000–2015)</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><code>birth_country.xlsx</code></td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="odd">
+<td><code>educational_institutions_classification.xlsx</code></td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><code>setl_mid_point.xlsx</code></td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="odd">
+<td><code>sectors.xlsx</code></td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><code>output/csv_real/*.csv</code></td>
+<td>yes</td>
+<td>no</td>
+<td>-</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr class="odd">
+<td><code>unemployment.csv</code></td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>where <code>YYYY</code> goes from 1991 to 2015 and <code>XXXX</code> goes from 2000 to 2015, respectively.</p>
+</section>
+</section>
+<section id="requirements" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Requirements</h1>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">README is in TXT, MD, or PDF format (<code>README.md</code>)</label></li>
+<li><label><input type="checkbox" checked="">README is accessible at the root of the package (not inside a folder)</label></li>
+<li><label><input type="checkbox">Title conforms to guidance (starts with “Data and Code for: Title of Paper” or “Code for: Title of Paper”, is properly capitalized)</label></li>
+<li><label><input type="checkbox">Authors (with affiliations) are listed in the same order as on the paper</label></li>
+</ul>
+<blockquote class="blockquote">
+<p>{REQUIRED} Please review the title of the deposit as per our guidelines.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>{REQUIRED} Please review authors and affiliations on the deposit. In general, they are the same, and in the same order, as for the manuscript; however, authors can deviate from that order.</p>
+</blockquote>
+<section id="stated-requirements" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="stated-requirements"><span class="header-section-number">6.1</span> Stated Requirements</h2>
+<ul>
+<li><p><label><input type="checkbox">No requirements specified</label></p></li>
+<li><p><label><input type="checkbox" checked="">Software Requirements specified as follows:</label></p>
+<ul>
+<li>R version 4.5.2 (2025-10-31)</li>
+<li>Packages: data.table 1.18.2.1, haven 2.5.5, writexl 1.5.4, readxl 1.4.5, data.table 1.18.2.1, ggplot2 4.0.2, haven 2.5.5, lfe 3.1.1, stargazer 5.2.3, stringr 1.6.0, lubridate 1.9.5, survival 3.8-3, plotrix 3.8-14, ggplot2 4.0.2, readxl 1.4.5, data.table 1.18.2.1, ggpubr 0.6.3, xtable 1.8-4, stargazer 5.2.3, gridExtra 2.3, RColorBrewer 1.1-3, ggrastr 1.0.2, gridtext 0.1.6, lfe 3.1.1, lubridate 1.9.5, scales 1.4.0</li>
+</ul></li>
+<li><p><label><input type="checkbox" checked="">Computational Requirements specified as follows:</label></p>
+<ul>
+<li>macOS Monterey 12.7.6, aarch64-apple-darwin20 (Apple silicon), 8 GB RAM, 50 GB free disk space</li>
+</ul></li>
+<li><p><label><input type="checkbox">Time Requirements specified as follows:</label></p>
+<ul>
+<li>Stage 0 ≈ 2 min, Stage 1 ≈ 48 hours, Stage 2 ≈ 2 min. Mode B (real CSVs) ≈ 2 min total.</li>
+</ul></li>
+<li><p><label><input type="checkbox">Requirements are complete.</label></p></li>
+<li><p>Time Requirement for Mode C are missing</p></li>
+</ul>
+</section>
+</section>
+<section id="analyzing-data-and-code-files" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Analyzing Data and Code Files</h1>
+<section id="potential-personal-identifiable-information-pii" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="potential-personal-identifiable-information-pii"><span class="header-section-number">7.1</span> Potential Personal Identifiable Information (PII)</h2>
+<p>⚠️ We found the following instances of potentially personally identifying information. This may be completely legitimate but might be worth checking. <em>As a reminder, privacy legislation in many countries (e.g.&nbsp;GDPR in EU) prohibits the dissemination of personal identifiable information without prior (and documented) consent of individuals.</em> If indeed you want to publish such information with your replication package, you should probably have obtained IRB approval for this - please check!</p>
+<p><strong>Summary:</strong> - Data files with PII indicators: 5 - Variables flagged in data: 7 - Code files with PII references: 112 - PII references in code: 3566</p>
+<section id="summary-of-flagged-files" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="summary-of-flagged-files"><span class="header-section-number">7.1.1</span> Summary of Flagged Files</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 40%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File Type</th>
+<th>File</th>
+<th>Variables/References</th>
+<th>PII Categories</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data</td>
+<td><code>figure_reg_emp_con_long_firm.csv</code></td>
+<td>1</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Data</td>
+<td><code>figure_reg_emp_con_long_sector_sex.csv</code></td>
+<td>1</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Data</td>
+<td><code>table_hist_con_worker.csv</code></td>
+<td>2</td>
+<td>sex, city</td>
+</tr>
+<tr class="even">
+<td>Data</td>
+<td><code>table_retirement.csv</code></td>
+<td>1</td>
+<td>sex</td>
+</tr>
+<tr class="odd">
+<td>Data</td>
+<td><code>table_summary_children_multiple2.csv</code></td>
+<td>2</td>
+<td>city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>functions_moments.R</code></td>
+<td>46</td>
+<td>lat, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>functions_reg_emp_con.R</code></td>
+<td>223</td>
+<td>child, name, birth, city, district, sex, lat, loc, location</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>functions_reg_emp_con_long.R</code></td>
+<td>230</td>
+<td>child, lon, name, birth, city, district, sex, son, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>functions_reg_emp_con_long_figure.R</code></td>
+<td>47</td>
+<td>lon, block, loc, child, name, birth, city, district, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>gen_figures.R</code></td>
+<td>60</td>
+<td>city, gender, child, lat, lon, name, coord, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>gen_tables.R</code></td>
+<td>333</td>
+<td>child, name, city, gender, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>master_all.R</code></td>
+<td>9</td>
+<td>network, lat, minute, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>master_inter.R</code></td>
+<td>29</td>
+<td>name, lat, loc, location, child, lon, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>master_output.R</code></td>
+<td>6</td>
+<td>name, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>master_simulate.R</code></td>
+<td>29</td>
+<td>lat, name, child, loc, birth, father, district, country, location</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_akm.R</code></td>
+<td>46</td>
+<td>child, name, lat, birth, lname, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_akm_children.R</code></td>
+<td>37</td>
+<td>name, lat, birth, lname, son, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_akm_res.R</code></td>
+<td>27</td>
+<td>child, name, lat, birth</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_first_job_data.R</code></td>
+<td>26</td>
+<td>child, name, sex, birth, city, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_first_job_data_multiple2.R</code></td>
+<td>26</td>
+<td>child, name, sex, birth, city, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_panel.R</code></td>
+<td>17</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_panel_employment.R</code></td>
+<td>20</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_panel_employment_25.R</code></td>
+<td>21</td>
+<td>child, name, city, district, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_panel_employment_phantom_past.R</code></td>
+<td>19</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_panel_total_5years.R</code></td>
+<td>21</td>
+<td>child, name, sex, city, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_panel_total_5years_multiple2.R</code></td>
+<td>21</td>
+<td>child, name, sex, city, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_salary_30.R</code></td>
+<td>25</td>
+<td>child, name, birth, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample1.R</code></td>
+<td>61</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample1_1927.R</code></td>
+<td>61</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample1_25.R</code></td>
+<td>59</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample1_employment.R</code></td>
+<td>59</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample1_grad1.R</code></td>
+<td>58</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample_1927.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample_25.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample_employment.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample_grad1.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_employment_rate_25_20.R</code></td>
+<td>35</td>
+<td>birth, name, child, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_firm_rank.R</code></td>
+<td>13</td>
+<td>child, name, lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_firm_rank_multiple2.R</code></td>
+<td>13</td>
+<td>child, name, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_id_pco.R</code></td>
+<td>8</td>
+<td>birth, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_indirect.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_indirect_1927.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_indirect_25.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_indirect_grad1.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_indirect_multiple.R</code></td>
+<td>8</td>
+<td>birth, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_indirect_multiple_firm_size.R</code></td>
+<td>8</td>
+<td>birth, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_long.R</code></td>
+<td>67</td>
+<td>birth, name, lname, child, lat, city, sex, lon</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_phantom_past_employment.R</code></td>
+<td>32</td>
+<td>birth, name, child, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_type.R</code></td>
+<td>13</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_type_1927.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_type_25.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_type_grad1.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_type_multiple2.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_type_multiple2_firm_size.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_duration_first_job.R</code></td>
+<td>14</td>
+<td>child, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_education.R</code></td>
+<td>19</td>
+<td>name, lname, school, lat, birth</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_employment_history.R</code></td>
+<td>4</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_employment_history_1927.R</code></td>
+<td>4</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_firm_duration.R</code></td>
+<td>10</td>
+<td>name, child, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_firm_location.R</code></td>
+<td>26</td>
+<td>name, child, loc, location, lname, lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_firm_year.R</code></td>
+<td>16</td>
+<td>child, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_industry.R</code></td>
+<td>22</td>
+<td>name, lname, lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_location.R</code></td>
+<td>13</td>
+<td>name, lname, district, city, loc, location</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents.R</code></td>
+<td>11</td>
+<td>lat, name, father, mother</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_parents_firms.R</code></td>
+<td>21</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents_firms_1927.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_parents_firms_25.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents_firms_employment.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_parents_firms_firm_size.R</code></td>
+<td>21</td>
+<td>name, child, birth</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents_firms_grad1.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_population.R</code></td>
+<td>32</td>
+<td>lat, name, lname, father, mother, birth, country, sex, city</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_sector.R</code></td>
+<td>11</td>
+<td>lon, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_summary_children_multiple2.R</code></td>
+<td>25</td>
+<td>child, name, sex, birth, city</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_wages.R</code></td>
+<td>35</td>
+<td>lat, name, birth, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_wages_1927.R</code></td>
+<td>35</td>
+<td>lat, name, birth, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_wages_total.R</code></td>
+<td>38</td>
+<td>son, child, lat, name, birth, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>simulate_all_population.R</code></td>
+<td>20</td>
+<td>lat, name, birth, father, mother, child, country, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>simulate_crosswalks.R</code></td>
+<td>12</td>
+<td>lat, birth, country, name, loc</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>simulate_education.R</code></td>
+<td>7</td>
+<td>lat, birth</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>simulate_hardi.R</code></td>
+<td>2</td>
+<td>lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>simulate_location.R</code></td>
+<td>11</td>
+<td>lat, loc, location, district, city, name, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>simulate_wages.R</code></td>
+<td>22</td>
+<td>lat, name, child, birth, son</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tabels_hist_group_size.R</code></td>
+<td>17</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_children_panel.R</code></td>
+<td>12</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_firm_var_sector.R</code></td>
+<td>21</td>
+<td>name, child, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_hist_con.R</code></td>
+<td>68</td>
+<td>name, child, city, sex, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_hist_con_firmsize_multiple2.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_raw_emp_con.R</code></td>
+<td>10</td>
+<td>child, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_balancing.R</code></td>
+<td>22</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_children_panel_employment.R</code></td>
+<td>4</td>
+<td>child, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_1927.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_1927_entry_age.R</code></td>
+<td>36</td>
+<td>name, child, birth, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_25.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_exit.R</code></td>
+<td>22</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_grad1.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_figure.R</code></td>
+<td>34</td>
+<td>lon, name, child, sex, city</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_firm.R</code></td>
+<td>24</td>
+<td>lon, name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_sector_sex.R</code></td>
+<td>27</td>
+<td>lon, name, sex, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_year.R</code></td>
+<td>26</td>
+<td>lon, name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_multiple2.R</code></td>
+<td>32</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_multiple2_firm_size.R</code></td>
+<td>29</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_multiple_jobs.R</code></td>
+<td>35</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_one_job.R</code></td>
+<td>49</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_placebo.R</code></td>
+<td>34</td>
+<td>lon, name, child, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_panel_total_5years_multiple2.R</code></td>
+<td>4</td>
+<td>child, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_salary_duration_con_event.R</code></td>
+<td>21</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_salary_duration_con_multiple2.R</code></td>
+<td>41</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_retirement.R</code></td>
+<td>41</td>
+<td>lat, name, birth, sex, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_structural_data_multiple2.R</code></td>
+<td>29</td>
+<td>child, name, birth, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_summary_children_multiple2.R</code></td>
+<td>17</td>
+<td>child, name, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_summary_firms.R</code></td>
+<td>4</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>‏‏functions_reg_emp_con_25.R</code></td>
+<td>33</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>‏‏tables_reg_emp_con_event_multiple2.R</code></td>
+<td>24</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>‏‏‏‏functions_reg_emp_con_grad1.R</code></td>
+<td>33</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>‏‏‏‏tables_reg_emp_con_long_int.r</code></td>
+<td>23</td>
+<td>lon, name, child</td>
+</tr>
+</tbody>
+</table>
+<p><em>See <a href="report-pii-appendix.md">Appendix</a> for detailed listing of all flagged instances.</em></p>
+</section>
+<section id="file-paths-report" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="file-paths-report"><span class="header-section-number">7.1.2</span> File Paths Report</h3>
+<p><em>Generated on 2026-07-27T12:39:39.710</em></p>
+<p><strong>Warning</strong>: Our search on file path types is imperfect and incurs both type 1 and type 2 errors. We aim to strike a reasonable balance between both. The below table is therefore only indicative. Detailed listings can be found in the appendix to this report.</p>
+<p>In this table we analyse all files which contain source code (not data and documentation), and we report the grand total of each type of filepath we encountered.</p>
+<p>Please check and replace any <code>windows</code> filepaths with unix compliant paths, insofar as this is possible in your setup. (Notice that <code>STATA</code> allows <code>/</code> to be a filepath separator on a windows platform, hence this is a requirement for <em>all</em> <code>STATA</code> applications.)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 22%">
+<col style="width: 19%">
+<col style="width: 20%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Files Analyzed</th>
+<th>Windows Paths</th>
+<th>Unix Paths</th>
+<th>Mixed Paths</th>
+<th>Drive Letters (<code>C:\</code> etc)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>224</td>
+<td>0</td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="duplicate-files-report" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="duplicate-files-report"><span class="header-section-number">7.1.3</span> Duplicate Files Report</h3>
+<p>We found the following duplicate files:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 30%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Filename</th>
+<th style="text-align: right;">Size (MB)</th>
+<th style="text-align: left;">Checksum (MD5)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">/__MACOSX/labor_networks/code/._.DS_Store</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: left;">0bed7e90c2bade9763fa18f1fb4441d31f91c87c</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">/__MACOSX/labor_networks/code/inter/._.DS_Store</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: left;">0bed7e90c2bade9763fa18f1fb4441d31f91c87c</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">/__MACOSX/labor_networks/code/simulate/._.DS_Store</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: left;">0bed7e90c2bade9763fa18f1fb4441d31f91c87c</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">/__MACOSX/labor_networks/data/._.DS_Store</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: left;">0bed7e90c2bade9763fa18f1fb4441d31f91c87c</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">/__MACOSX/labor_networks/data/input/._.DS_Store</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: left;">0bed7e90c2bade9763fa18f1fb4441d31f91c87c</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">/__MACOSX/labor_networks/output/._.DS_Store</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: left;">0bed7e90c2bade9763fa18f1fb4441d31f91c87c</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">/__MACOSX/labor_networks/output/csv_real/._.DS_Store</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: left;">0bed7e90c2bade9763fa18f1fb4441d31f91c87c</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="zero-size-files-report" class="level3" data-number="7.1.4">
+<h3 data-number="7.1.4" class="anchored" data-anchor-id="zero-size-files-report"><span class="header-section-number">7.1.4</span> Zero Size Files Report</h3>
+<p>We did not find any zero sized files.</p>
+</section>
+<section id="large-files-report" class="level3" data-number="7.1.5">
+<h3 data-number="7.1.5" class="anchored" data-anchor-id="large-files-report"><span class="header-section-number">7.1.5</span> Large Files Report</h3>
+<p>We did not find any files larger than 100MB.</p>
+</section>
+</section>
+<section id="code-description" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="code-description"><span class="header-section-number">7.2</span> Code description</h2>
+<p>There are 108 R scripts of which 4 are master scripts</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>cloc</th>
+<th>github.com/AlDanial/cloc v 2.02 T=0.11 s (1398.7 files/s, 213994.2 lines/s)</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Language</th>
+<th style="text-align: right;">files</th>
+<th style="text-align: right;">blank</th>
+<th style="text-align: right;">comment</th>
+<th style="text-align: right;">code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">3553</td>
+<td style="text-align: right;">1782</td>
+<td style="text-align: right;">11815</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CSV</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5371</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Markdown</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">343</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">——–</td>
+<td style="text-align: right;">——–</td>
+<td style="text-align: right;">——–</td>
+<td style="text-align: right;">——–</td>
+<td style="text-align: right;">——–</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SUM:</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">3639</td>
+<td style="text-align: right;">1782</td>
+<td style="text-align: right;">17529</td>
+</tr>
+</tbody>
+</table>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">The replication package contains a “main” or “master” file(s) which calls all other auxiliary programs</label></li>
+</ul>
+</section>
+<section id="computing-environment-of-the-replicator" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="computing-environment-of-the-replicator"><span class="header-section-number">7.3</span> Computing Environment of the Replicator</h2>
+<ul>
+<li><p>Nuvolos: Ubuntu 24.04.1 LTS, 4 vCPU + 16 GB RAM</p></li>
+<li><p>R 4.5.2 with RStudio 2026.01</p></li>
+</ul>
+</section>
+</section>
+<section id="replication" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Replication</h1>
+<ul>
+<li>Downloaded code and data from dropbox.</li>
+<li>Copied git repo and unzipped the replication package into this repo.</li>
+<li>Set <code>root</code> in <code>master_all.R</code> as per the README instructions.</li>
+<li>Installed packages as per the README instructions.</li>
+<li>Ran with <code>run_mode &lt;- "A"</code></li>
+<li>Ran with <code>run_mode &lt;- "B"</code></li>
+<li>Committed changes</li>
+</ul>
+</section>
+<section id="sec-findings" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Findings</h1>
+<section id="missing-requirements" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="missing-requirements"><span class="header-section-number">9.1</span> Missing Requirements</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Software Requirements</label>
+<ul class="task-list">
+<li><label><input type="checkbox">Stata</label>
+<ul>
+<li><label><input type="checkbox">Version</label></li>
+<li>Packages go here</li>
+</ul></li>
+<li><label><input type="checkbox">Matlab</label>
+<ul class="task-list">
+<li><label><input type="checkbox">Version</label></li>
+</ul></li>
+<li><label><input type="checkbox">R</label>
+<ul>
+<li><label><input type="checkbox">Version</label></li>
+<li>R packages go here</li>
+</ul></li>
+<li><label><input type="checkbox">Python</label>
+<ul>
+<li><label><input type="checkbox">Version</label></li>
+<li>Python package go here</li>
+</ul></li>
+<li><label><input type="checkbox">REPLACE ME WITH OTHER</label></li>
+</ul></li>
+<li><label><input type="checkbox">Computational Requirements specified as follows:</label>
+<ul>
+<li>Cluster size, disk size, memory size, etc.</li>
+</ul></li>
+<li><label><input type="checkbox" checked="">Time Requirements</label>
+<ul>
+<li>Length of computation time for Mode C</li>
+</ul></li>
+</ul>
+<blockquote class="blockquote">
+<p>[REQUIRED] Please amend README to contain complete requirements.</p>
+</blockquote>
+</section>
+<section id="data-preparation-code" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="data-preparation-code"><span class="header-section-number">9.2</span> Data Preparation Code</h2>
+<ul>
+<li>Master script run as expected. Tables <code>.tex</code> were missing the tabulare/table environment for compilation.</li>
+</ul>
+</section>
+<section id="tables-and-figures" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="tables-and-figures"><span class="header-section-number">9.3</span> Tables and Figures</h2>
+<ul>
+<li>Figure A.8 is printed with a confidence interval with a different style than the one in the manuscript</li>
+</ul>
+</section>
+<section id="in-text-numbers" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="in-text-numbers"><span class="header-section-number">9.4</span> In-Text Numbers</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">In-text numbers not verified.</label></p></li>
+<li><p><label><input type="checkbox">There are no in-text numbers, or all in-text numbers stem from tables and figures.</label></p></li>
+<li><p><label><input type="checkbox">There are in-text numbers, but they are not identified in the code</label></p></li>
+</ul>
+</section>
+<section id="other-issues" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="other-issues"><span class="header-section-number">9.5</span> Other Issues</h2>
+<ul>
+<li>LICENSE.txt is missing the title, the copyright year and author</li>
+</ul>
+</section>
+</section>
+<section id="classification" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Classification</h1>
+<ul class="task-list">
+<li><label><input type="checkbox">full reproduction</label></li>
+<li><label><input type="checkbox" checked="">full reproduction with minor issues</label></li>
+<li><label><input type="checkbox">partial reproduction (see above)</label></li>
+<li><label><input type="checkbox">not able to reproduce most or all of the results (reasons see above)</label></li>
+</ul>
+<section id="reason-for-incomplete-reproducibility" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="reason-for-incomplete-reproducibility"><span class="header-section-number">10.1</span> Reason for incomplete reproducibility</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">None.</label></li>
+<li><label><input type="checkbox" checked=""><code>Discrepancy in output</code> (either figures or numbers in tables or text differ)</label></li>
+<li><label><input type="checkbox"><code>Bugs in code</code> that were fixable by the replicator (but should be fixed in the final deposit)</label></li>
+<li><label><input type="checkbox"><code>Code missing</code>, in particular if it prevented the replicator from completing the reproducibility check</label>
+<ul class="task-list">
+<li><label><input type="checkbox"><code>Data preparation code missing</code> should be checked if the code missing seems to be data preparation code</label></li>
+</ul></li>
+<li><label><input type="checkbox"><code>Code not functional</code> is more severe than a simple bug: it prevented the replicator from completing the reproducibility check</label></li>
+<li><label><input type="checkbox"><code>Software not available to replicator</code> may happen for a variety of reasons, but in particular (a) when the software is commercial, and the replicator does not have access to a licensed copy, or (b) the software is open-source, but a specific version required to conduct the reproducibility check is not available.</label></li>
+<li><label><input type="checkbox"><code>Insufficient time available to replicator</code> is applicable when (a) running the code would take weeks or more (b) running the code might take less time if sufficient compute resources were to be brought to bear, but no such resources can be accessed in a timely fashion (c) the replication package is very complex, and following all (manual and scripted) steps would take too long.</label></li>
+<li><label><input type="checkbox"><code>Data missing</code> is marked when data <em>should</em> be available, but was erroneously not provided, or is not accessible via the procedures described in the replication package</label></li>
+<li><label><input type="checkbox"><code>Data not available</code> is marked when data requires additional access steps, for instance purchase or application procedure.</label></li>
+<li><label><input type="checkbox" checked=""><code>Missing README</code> is marked if there is no README to guide the replicator, or the README is not in compliance with JPE requirements</label></li>
+</ul>
+</section>
+<section id="potential-personal-identifiable-information-pii-1" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="potential-personal-identifiable-information-pii-1"><span class="header-section-number">10.2</span> Potential Personal Identifiable Information (PII)</h2>
+<p>⚠️ We found the following instances of potentially personally identifying information. This may be completely legitimate but might be worth checking. <em>As a reminder, privacy legislation in many countries (e.g.&nbsp;GDPR in EU) prohibits the dissemination of personal identifiable information without prior (and documented) consent of individuals.</em> If indeed you want to publish such information with your replication package, you should probably have obtained IRB approval for this - please check!</p>
+<p><strong>Summary:</strong> - Data files with PII indicators: 5 - Variables flagged in data: 7 - Code files with PII references: 112 - PII references in code: 3566</p>
+<section id="summary-of-flagged-files-1" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="summary-of-flagged-files-1"><span class="header-section-number">10.2.1</span> Summary of Flagged Files</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 40%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File Type</th>
+<th>File</th>
+<th>Variables/References</th>
+<th>PII Categories</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data</td>
+<td><code>figure_reg_emp_con_long_firm.csv</code></td>
+<td>1</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Data</td>
+<td><code>figure_reg_emp_con_long_sector_sex.csv</code></td>
+<td>1</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Data</td>
+<td><code>table_hist_con_worker.csv</code></td>
+<td>2</td>
+<td>sex, city</td>
+</tr>
+<tr class="even">
+<td>Data</td>
+<td><code>table_retirement.csv</code></td>
+<td>1</td>
+<td>sex</td>
+</tr>
+<tr class="odd">
+<td>Data</td>
+<td><code>table_summary_children_multiple2.csv</code></td>
+<td>2</td>
+<td>city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>functions_moments.R</code></td>
+<td>46</td>
+<td>lat, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>functions_reg_emp_con.R</code></td>
+<td>223</td>
+<td>child, name, birth, city, district, sex, lat, loc, location</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>functions_reg_emp_con_long.R</code></td>
+<td>230</td>
+<td>child, lon, name, birth, city, district, sex, son, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>functions_reg_emp_con_long_figure.R</code></td>
+<td>47</td>
+<td>lon, block, loc, child, name, birth, city, district, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>gen_figures.R</code></td>
+<td>60</td>
+<td>city, gender, child, lat, lon, name, coord, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>gen_tables.R</code></td>
+<td>333</td>
+<td>child, name, city, gender, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>master_all.R</code></td>
+<td>9</td>
+<td>network, lat, minute, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>master_inter.R</code></td>
+<td>29</td>
+<td>name, lat, loc, location, child, lon, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>master_output.R</code></td>
+<td>6</td>
+<td>name, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>master_simulate.R</code></td>
+<td>29</td>
+<td>lat, name, child, loc, birth, father, district, country, location</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_akm.R</code></td>
+<td>46</td>
+<td>child, name, lat, birth, lname, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_akm_children.R</code></td>
+<td>37</td>
+<td>name, lat, birth, lname, son, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_akm_res.R</code></td>
+<td>27</td>
+<td>child, name, lat, birth</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_first_job_data.R</code></td>
+<td>26</td>
+<td>child, name, sex, birth, city, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_first_job_data_multiple2.R</code></td>
+<td>26</td>
+<td>child, name, sex, birth, city, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_panel.R</code></td>
+<td>17</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_panel_employment.R</code></td>
+<td>20</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_panel_employment_25.R</code></td>
+<td>21</td>
+<td>child, name, city, district, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_panel_employment_phantom_past.R</code></td>
+<td>19</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_panel_total_5years.R</code></td>
+<td>21</td>
+<td>child, name, sex, city, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_panel_total_5years_multiple2.R</code></td>
+<td>21</td>
+<td>child, name, sex, city, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_salary_30.R</code></td>
+<td>25</td>
+<td>child, name, birth, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample1.R</code></td>
+<td>61</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample1_1927.R</code></td>
+<td>61</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample1_25.R</code></td>
+<td>59</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample1_employment.R</code></td>
+<td>59</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample1_grad1.R</code></td>
+<td>58</td>
+<td>name, child, lat, birth, city, father, mother, sex, loc, location, district, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample_1927.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample_25.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_children_sample_employment.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_children_sample_grad1.R</code></td>
+<td>14</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_employment_rate_25_20.R</code></td>
+<td>35</td>
+<td>birth, name, child, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_firm_rank.R</code></td>
+<td>13</td>
+<td>child, name, lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_firm_rank_multiple2.R</code></td>
+<td>13</td>
+<td>child, name, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_id_pco.R</code></td>
+<td>8</td>
+<td>birth, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_indirect.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_indirect_1927.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_indirect_25.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_indirect_grad1.R</code></td>
+<td>47</td>
+<td>birth, lat, name, city, sex, child, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_indirect_multiple.R</code></td>
+<td>8</td>
+<td>birth, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_indirect_multiple_firm_size.R</code></td>
+<td>8</td>
+<td>birth, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_long.R</code></td>
+<td>67</td>
+<td>birth, name, lname, child, lat, city, sex, lon</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_phantom_past_employment.R</code></td>
+<td>32</td>
+<td>birth, name, child, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_type.R</code></td>
+<td>13</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_type_1927.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_type_25.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_type_grad1.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_connections_type_multiple2.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_connections_type_multiple2_firm_size.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_duration_first_job.R</code></td>
+<td>14</td>
+<td>child, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_education.R</code></td>
+<td>19</td>
+<td>name, lname, school, lat, birth</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_employment_history.R</code></td>
+<td>4</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_employment_history_1927.R</code></td>
+<td>4</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_firm_duration.R</code></td>
+<td>10</td>
+<td>name, child, lat</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_firm_location.R</code></td>
+<td>26</td>
+<td>name, child, loc, location, lname, lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_firm_year.R</code></td>
+<td>16</td>
+<td>child, name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_industry.R</code></td>
+<td>22</td>
+<td>name, lname, lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_location.R</code></td>
+<td>13</td>
+<td>name, lname, district, city, loc, location</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents.R</code></td>
+<td>11</td>
+<td>lat, name, father, mother</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_parents_firms.R</code></td>
+<td>21</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents_firms_1927.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_parents_firms_25.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents_firms_employment.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_parents_firms_firm_size.R</code></td>
+<td>21</td>
+<td>name, child, birth</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_parents_firms_grad1.R</code></td>
+<td>23</td>
+<td>name, child, birth, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_population.R</code></td>
+<td>32</td>
+<td>lat, name, lname, father, mother, birth, country, sex, city</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_sector.R</code></td>
+<td>11</td>
+<td>lon, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_summary_children_multiple2.R</code></td>
+<td>25</td>
+<td>child, name, sex, birth, city</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_wages.R</code></td>
+<td>35</td>
+<td>lat, name, birth, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>prepare_wages_1927.R</code></td>
+<td>35</td>
+<td>lat, name, birth, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>prepare_wages_total.R</code></td>
+<td>38</td>
+<td>son, child, lat, name, birth, lname</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>simulate_all_population.R</code></td>
+<td>20</td>
+<td>lat, name, birth, father, mother, child, country, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>simulate_crosswalks.R</code></td>
+<td>12</td>
+<td>lat, birth, country, name, loc</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>simulate_education.R</code></td>
+<td>7</td>
+<td>lat, birth</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>simulate_hardi.R</code></td>
+<td>2</td>
+<td>lat</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>simulate_location.R</code></td>
+<td>11</td>
+<td>lat, loc, location, district, city, name, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>simulate_wages.R</code></td>
+<td>22</td>
+<td>lat, name, child, birth, son</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tabels_hist_group_size.R</code></td>
+<td>17</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_children_panel.R</code></td>
+<td>12</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_firm_var_sector.R</code></td>
+<td>21</td>
+<td>name, child, son</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_hist_con.R</code></td>
+<td>68</td>
+<td>name, child, city, sex, lon</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_hist_con_firmsize_multiple2.R</code></td>
+<td>8</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_raw_emp_con.R</code></td>
+<td>10</td>
+<td>child, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_balancing.R</code></td>
+<td>22</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_children_panel_employment.R</code></td>
+<td>4</td>
+<td>child, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_1927.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_1927_entry_age.R</code></td>
+<td>36</td>
+<td>name, child, birth, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_25.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_exit.R</code></td>
+<td>22</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_grad1.R</code></td>
+<td>38</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_figure.R</code></td>
+<td>34</td>
+<td>lon, name, child, sex, city</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_firm.R</code></td>
+<td>24</td>
+<td>lon, name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_sector_sex.R</code></td>
+<td>27</td>
+<td>lon, name, sex, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_long_year.R</code></td>
+<td>26</td>
+<td>lon, name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_multiple2.R</code></td>
+<td>32</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_multiple2_firm_size.R</code></td>
+<td>29</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_multiple_jobs.R</code></td>
+<td>35</td>
+<td>name, child</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_emp_con_one_job.R</code></td>
+<td>49</td>
+<td>name, child, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_emp_con_placebo.R</code></td>
+<td>34</td>
+<td>lon, name, child, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_panel_total_5years_multiple2.R</code></td>
+<td>4</td>
+<td>child, name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_reg_salary_duration_con_event.R</code></td>
+<td>21</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_reg_salary_duration_con_multiple2.R</code></td>
+<td>41</td>
+<td>child, name, city, sex, district</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_retirement.R</code></td>
+<td>41</td>
+<td>lat, name, birth, sex, lname</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_structural_data_multiple2.R</code></td>
+<td>29</td>
+<td>child, name, birth, city, sex</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>tables_summary_children_multiple2.R</code></td>
+<td>17</td>
+<td>child, name, city, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>tables_summary_firms.R</code></td>
+<td>4</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>‏‏functions_reg_emp_con_25.R</code></td>
+<td>33</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>‏‏tables_reg_emp_con_event_multiple2.R</code></td>
+<td>24</td>
+<td>name, child</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td><code>‏‏‏‏functions_reg_emp_con_grad1.R</code></td>
+<td>33</td>
+<td>child, name, birth, city, district, sex</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td><code>‏‏‏‏tables_reg_emp_con_long_int.r</code></td>
+<td>23</td>
+<td>lon, name, child</td>
+</tr>
+</tbody>
+</table>
+<p><em>See <a href="report-pii-appendix.md">Appendix</a> for detailed listing of all flagged instances.</em></p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
