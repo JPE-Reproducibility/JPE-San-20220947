@@ -192,9 +192,44 @@ There are 108 R scripts of which 4 are master scripts
 
 ## Data Preparation Code
 
-- Master script run as expected. Tables `.tex` were missing the tabulare/table environment for compilation.
+- Master script run as expected. Tables `.tex` were missing the tabular/table environment for compilation.
 
 ## Tables and Figures
+
+| Figure/Table # | Program       | Line Number | Reproduced? |
+|----------------|---------------|-------------|-------------|
+| Table 1        | gen_tables.R  | 3           | Yes         |
+| Table 2        | gen_tables.R  | 201         | Yes         |
+| Table 3        | gen_tables.R  | 474         | Yes         |
+| Table 4        | gen_tables.R  | 539         | Yes         |
+| Table 5        | gen_tables.R  | 680         | Yes         |
+| Table A1       | gen_tables.R  | 809         | Yes         |
+| Table A2       | gen_tables.R  | 848         | Yes         |
+| Table A3       | gen_tables.R  | 1004        | Yes         |
+| Table A4       | gen_tables.R  | 1179        | Yes         |
+| Table A5       | gen_tables.R  | 1275        | Yes         |
+| Table A6       | gen_tables.R  | 1400        | Yes         |
+| Table A7       | gen_tables.R  | 1552        | Yes         |
+| Table A8       | gen_tables.R  | 1798        | Yes         |
+| Figure 1       | gen_figures.R | 147         | Yes         |
+| Figure 2       | gen_figures.R | 184         | Yes         |
+| Figure 3       | gen_figures.R | 375         | Yes         |
+| Figure 4       | gen_figures.R | 540         | Yes         |
+| Figure 5       | gen_figures.R | 573         | Yes         |
+| Figure 6       | gen_figures.R | 635         | Yes         |
+| Figure A1      | gen_figures.R | 695         | Yes         |
+| Figure A2      | gen_figures.R | 788         | Yes         |
+| Figure A3      | gen_figures.R | 838         | Yes         |
+| Figure A4      | gen_figures.R | 907         | Yes         |
+| Figure A5      | gen_figures.R | 936         | Yes         |
+| Figure A6      | gen_figures.R | 1004        | Yes         |
+| Figure A7      | gen_figures.R | 1074        | Yes         |
+| Figure A8      | gen_figures.R | 1131        | Yes         |
+| Figure A9      | gen_figures.R | 1191        | Yes         |
+| Figure A10     | gen_figures.R | 1227        | Yes         |
+| Figure A11     | gen_figures.R | 1273        | Yes         |
+| Figure A12     | gen_figures.R | 1371        | Yes         |
+| Figure A13     | gen_figures.R | 1400        | Yes         |
 
 - Figure A.8 is printed with a confidence interval with a different style than the one in the manuscript
 
