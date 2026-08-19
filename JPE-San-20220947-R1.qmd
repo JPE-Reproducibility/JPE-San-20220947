@@ -27,7 +27,7 @@ Some useful information up front:
 
 In assessing compliance with our [Data and Code Availability Policy](https://www.journals.uchicago.edu/journals/jpe/datapolicy), our reproducibility team has identified the following issues, which we ask you to address:
 
-1. Data Editor's first point.
+1. I clicked on the website for the BTL data. you should point out that it's in Hebrew by default, and provide this link for the english version: https://www.btl.gov.il/English%20homepage/Pages/default.aspx . Also, you write _all details can be found at_ - I would object to that claim. You need to tell the user exactly where they have to go on this website, which forms to fill out, where to click on etc and provide a feasible route to access this data. 
 2. Data Editor's second point.
 
 # General
